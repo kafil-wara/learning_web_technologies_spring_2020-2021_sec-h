@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+    <script type="text/javascript" src="../model/functions.js"></script>
+</head>
+<body>
+	<fieldset>
+        <fieldset>
+            <legend>
+                <b>REGISTRATION </b>
+            </legend>
+			 
+            <form name="addUser" onsubmit="validateRegistration()" method='POST' >
+                <table align=""> 
+                    <tr>
+                        <td>
+                            Username :
+                        </td>
+                        <td>
+                            <input type="text" name='username' id="username">
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password" name='password' id="pass">
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td>
+                            <input type="password" name='repass' id="repass">
+                        </td>
+                    </tr>
+
+                   
+                    <tr>
+                        <td>Name:</td>
+                        <td>
+                            <input type="text" name='name' id="name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="text" name='email' id="email">
+                        </td>
+                    </tr>
+
+                        <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend>
+                                    <b>User Type</b>
+                                </legend>
+                                <input type='radio' name='userType'value='buyer' id="type">Buyer
+                                <input type='radio' name='userType'value='seller' id="type">Seller
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type='submit' name="registration" value='Submit'>
+                            <input type='reset' value='Reset'>
+                            <a href="login.html">Log In</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+			  
+			   
+        </fieldset>
+</body>
+</html>
