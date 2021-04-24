@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<fieldset>
+        <fieldset>
+            <legend>
+                <b>REGISTRATION </b>
+            </legend>
+			 
+            <form action='../controller/regCheck.php' method='POST' >
+                <table align=""> 
+                    <tr>
+                        <td>
+                            Username :
+                        </td>
+                        <td>
+                            <input type="text" name='username'>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password" name='password'>
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td>
+                            <input type="password" name='repass'>
+                        </td>
+                    </tr>
+
+                   
+                    <!-- <tr>
+                        <td>Name:</td>
+                        <td>
+                            <input type="text" name='name'>
+                        </td>
+                    </tr> -->
+
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="text" name='email'>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend>
+                                    <b>Gender</b>
+                                </legend>
+                                <input type='radio' name='gender'value='male' id="gender">Male
+                                <input type='radio' name='gender'value='female' id="gender">Female
+                            </fieldset>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend>
+                                    <b>User Type</b>
+                                </legend>
+                                <input type='radio' name='userType'value='buyer'>Buyer
+                                <input type='radio' name='userType'value='seller'>Seller
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type='submit' name='registration' value='Submit'>
+                            <input type='reset' value='Reset'>
+                            <a href="login.html">Log In</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+			  
+			   
+        </fieldset>
+</body>
+</html>

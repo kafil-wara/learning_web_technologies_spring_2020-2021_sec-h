@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<body>
+	<form method="post" action="../controller/regCheck.php" enctype="multipart/form-data" onsubmit = "return checkvalidation()" >
+	
+		
+
+
+		<fieldset>
+			
+			
+			<table  width="100%" align="center">
+				<tr align="center">
+					
+					<td colspan="2" height="80px" align="right">		
+					</td>
+				</tr>
+				<tr align="left" height="300px">
+					<td colspan="3">
+						
+							<legend align="center"><h1><u>SIGN UP</u></h1></legend>
+							<table align="center">
+								<tr>
+									<td><span>User Name</span> </td>
+									<td><input type="text" name="username" id="name" value="" placeholder="User Name"></td>
+									<td rowspan="3" align="left">	
+									</td>
+								</tr>
+								<tr>
+									<td><span>Password</span> </td>
+									<td><input type="password" name="password" id="password" value="" placeholder="Password"></td>
+								</tr>
+								<tr>
+									<td><span>Confirm Password</span> </td>
+									<td><input type="password" name="repass" id="repass" value="" placeholder="Confirm Password"></td>
+								</tr>
+								
+								<tr>
+									<td><span>Gender</span></td>
+									<td><input type="radio" name="gender" id="gender" value="male">Male <br>
+										<input type="radio" name="gender" id="gender" value="female">Female <br>
+									</td>	
+								</tr>
+								<tr>
+									<td>Email</td>
+									<td><input type="email" name="email" id="email" value="" placeholder="Email"></td>
+								</tr>
+													
+								<tr>
+									<td>Type</td>
+									<td>															
+									<input type="radio" name="type" value="seller">Seller 
+									<input type="radio" name="type" value="buyer">Buyer 	
+									</td>	
+								</tr>
+								
+								<tr>
+									<td>___________</td>
+									<td>______________________</td>
+								
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<input type="submit" name="signup" value="Submit"> 
+										<a href="login.html">Login</a>
+										<a href="home.html">Home</a>
+									</td>
+								
+								</tr>
+							</table>
+						
+					</td>
+				</tr>
+			
+				<tr align="center" >
+					<td colspan="3" height="50px">
+						Copyright@2021
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	<script type="text/javascript" src="../model/regcheck.js"></script>
+</body>
+</html>
